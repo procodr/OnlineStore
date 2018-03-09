@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebSite.Models
+namespace OnlineStore.Domain.Entities
 {
-    class Cutomer : BaseEntity
+    public class Customer : BaseEntity
     {
         public string FirstName { get; set; }
         public string Lastname { get; set; }

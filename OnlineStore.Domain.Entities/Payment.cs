@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebSite.Models
+namespace OnlineStore.Domain.Entities
 {
-    class Payment : BaseEntity
+    public class Payment : BaseEntity
     {
         public DateTime Date { get; set; }
-        public Cutomer Cutomer { get; set; }
+        public Customer Customer { get; set; }
         public IList<Order> Orders { get; set; }
     }
 }

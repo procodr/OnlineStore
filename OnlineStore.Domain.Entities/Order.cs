@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebSite.Models
+namespace OnlineStore.Domain.Entities
 {
-    class Order : BaseEntity
+    public class Order : BaseEntity
     {
         public Product Product { get; set; }
         public DateTime Date { get; set; }

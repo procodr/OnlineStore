@@ -1,16 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OnlineStore.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebSite.Models.Context
+namespace OnlineStore.Infrustructures.Data.Context
 {
-    class WebSiteContext : DbContext
+    class OnlineStoreContext : DbContext
     {
-        public WebSiteContext(DbContextOptions<WebSiteContext> options) : base(options)
+        public OnlineStoreContext(DbContextOptions<OnlineStoreContext> options) : base(options)
         {
         }
-        public DbSet<Cutomer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Product> Products { get; set; }

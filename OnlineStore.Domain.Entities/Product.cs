@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebSite.Models
+namespace OnlineStore.Domain.Entities
 {
-    class Product : BaseEntity
+    public class Product : BaseEntity
     {
         public string Name { get; set; }
         public int Price { get; set; }
