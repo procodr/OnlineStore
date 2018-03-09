@@ -1,5 +1,7 @@
 language: csharp
 solution: OnlineStore.sln
+mono: none
+dotnet: 2.1.4
 install:
   - sudo apt-get install -y gtk-sharp2
   - nuget restore OnlineStore.sln
