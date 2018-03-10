@@ -6,7 +6,7 @@ using System.Text;
 
 namespace OnlineStore.Infrustructures.Data.Context
 {
-    class OnlineStoreContext : DbContext
+    public class OnlineStoreContext : DbContext
     {
         public OnlineStoreContext(DbContextOptions<OnlineStoreContext> options) : base(options)
         {
