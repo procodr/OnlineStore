@@ -6,6 +6,11 @@ namespace OnlineStore.Domain.Entities
 {
     public class BaseEntity
     {
+        public BaseEntity()
+        {
+            CreatedTime = DateTime.Now;
+            UpdatedTime = DateTime.Now;
+        }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

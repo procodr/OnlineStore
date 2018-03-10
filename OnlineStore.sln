@@ -3,19 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Domain.Entities", "OnlineStore.Domain.Entities\OnlineStore.Domain.Entities.csproj", "{A16CA450-1E34-4318-8AA5-C412884397C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Domain.Entities", "OnlineStore.Domain.Entities\OnlineStore.Domain.Entities.csproj", "{A16CA450-1E34-4318-8AA5-C412884397C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Domain.Contract", "OnlineStore.Domain.Contract\OnlineStore.Domain.Contract.csproj", "{5459A611-5EB7-453E-8200-BCC5FE42DE7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Domain.Contract", "OnlineStore.Domain.Contract\OnlineStore.Domain.Contract.csproj", "{5459A611-5EB7-453E-8200-BCC5FE42DE7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Infrustructures.Data", "OnlineStore.Infrustructures.Data\OnlineStore.Infrustructures.Data.csproj", "{0C317A7B-DCAF-4926-9223-1B7AAAB7E2BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Infrustructures.Data", "OnlineStore.Infrustructures.Data\OnlineStore.Infrustructures.Data.csproj", "{0C317A7B-DCAF-4926-9223-1B7AAAB7E2BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Services.Application", "OnlineStore.Services.Application\OnlineStore.Services.Application.csproj", "{69655790-E08B-4F0D-9BC1-1877A923B359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Services.Application", "OnlineStore.Services.Application\OnlineStore.Services.Application.csproj", "{69655790-E08B-4F0D-9BC1-1877A923B359}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.WebUI", "OnlineStore.WebUI\OnlineStore.WebUI.csproj", "{2C0E5055-76CE-4B5D-A111-6DF4DDC81F0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.WebUI", "OnlineStore.WebUI\OnlineStore.WebUI.csproj", "{2C0E5055-76CE-4B5D-A111-6DF4DDC81F0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B0A5196E-74D7-40E9-8D0A-F361039B95DB}"
 	ProjectSection(SolutionItems) = preProject
 		.travis.yml = .travis.yml
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
