@@ -4,20 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineStore.Infrustructures.Data.Context;
+using OnlineStore.Services.Application;
 
 namespace OnlineStore.WebUI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly OnlineStoreContext _context;
-        public HomeController(OnlineStoreContext context)
+        private readonly ICustomerServices _customerServices;
+        public HomeController(ICustomerServices customerServices)
         {
-            _context = context;
+            _customerServices = customerServices;
         }
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Customers.ToListAsync());
+            return View(_customerServices.GetEnumerable());
         }
     }
 }

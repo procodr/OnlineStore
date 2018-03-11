@@ -8,7 +8,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OnlineStore.Domain.Contract.Repositories;
 using OnlineStore.Infrustructures.Data.Context;
+using OnlineStore.Infrustructures.Data.Repositories;
+using OnlineStore.Services.Application;
 
 namespace OnlineStore.WebUI
 {
@@ -23,8 +26,12 @@ namespace OnlineStore.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<OnlineStoreContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
-                );
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            if(bool.Parse(Configuration["UseCache"]))
+                services.AddScoped(typeof(ICustomerRepository), typeof(CachedCustomerRepository));
+            else
+                services.AddScoped(typeof(ICustomerRepository), typeof(CustomerRepository));
+            services.AddTransient<ICustomerServices, CustomerServices>();
             services.AddMvc();
         }
 
